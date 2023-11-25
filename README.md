@@ -364,3 +364,34 @@
 [around]: https://javadoc.io/static/org.aspectj/aspectjrt/1.9.5/org/aspectj/lang/annotation/Around.html
 
 [pointcut]: https://javadoc.io/static/org.aspectj/aspectjrt/1.9.5/org/aspectj/lang/annotation/Pointcut.html
+
+
+## Annotation API:
+- [@PathVariable]()
+- [@RequestParam]()
+- [@RequestBody]()
+- [@ResponseBody]()
+- [@RequestMapping]()
+- [@Autowire]()
+- [@Bean]()
+- [@ExceptionHandler]()
+- [@ControllerAdvice]()
+- [@Valid]()
+- [@PostConstruct]()
+- [@ResponseStatus]()
+- [@ModelAttribute]()
+- [@RequestHeader]()
+- [@Controller]()
+- [@RestController]()
+- [@Value]()
+- [@GetMapping]()
+- [@PostMapping]()
+- [@PutMapping]()
+- [@PatchMapping]()
+- [@DeleteMapping]()
+- [@SpringBootApplication]()
+- [@PreAuthorize]()
+
+
+  
+
