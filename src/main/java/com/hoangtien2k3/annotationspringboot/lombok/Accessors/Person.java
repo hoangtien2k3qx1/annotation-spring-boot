@@ -3,6 +3,13 @@ package com.hoangtien2k3.annotationspringboot.lombok.Accessors;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
+/**
+ * @author: hoangtien2k3
+ * @create: 25/11/2023 11:22
+ * @project: Person.java
+ * @description: @Date Annotation
+ * @update: 25/11/2023
+ */
 @Data
 @Accessors(fluent = true, chain = true)
 public class Person {

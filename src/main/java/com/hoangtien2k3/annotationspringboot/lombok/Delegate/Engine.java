@@ -2,6 +2,13 @@ package com.hoangtien2k3.annotationspringboot.lombok.Delegate;
 
 import lombok.experimental.Delegate;
 
+/**
+ * @author: hoangtien2k3
+ * @create: 25/11/2023 - 11:23
+ * @project: Engine.java
+ * @description: @Delegate
+ * @update: 25/11/2023
+ */
 public interface Engine {
     void start();
     void stop();

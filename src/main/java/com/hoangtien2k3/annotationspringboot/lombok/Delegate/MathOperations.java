@@ -2,6 +2,13 @@ package com.hoangtien2k3.annotationspringboot.lombok.Delegate;
 
 import lombok.experimental.Delegate;
 
+/**
+ * @author: hoangtien2k3
+ * @create: 25/11/2023 - 11:24
+ * @project: MathOperations.java
+ * @description: @Delegate
+ * @update: 25/11/2023
+ */
 public class MathOperations {
     public int add(int a, int b) {
         return a + b;

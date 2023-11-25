@@ -1,6 +1,52 @@
 
 # Lombok Annotations
 
+## Add the following dependency to your `pom.xml` file:
+```maven
+<dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.20</version>
+      <scope>provided</scope>
+</dependency>
+```
+
+## Add these two lines to the dependencies section of your `build.gradle` file:
+```markdown
+compileOnly 'org.projectlombok:lombok:1.18.20'
+annotationProcessor 'org.projectlombok:lombok:1.18.20'
+```
+
+## Add the Lombok dependency to the maven-compiler-plugin configuration:
+```maven
+<build>
+      <plugins>      
+            
+            <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-compiler-plugin</artifactId>
+                  <version>3.5.1</version>
+                  <configuration>
+                        <source>11</source> <!-- depending on your project -->
+                        <target>11</target> <!-- depending on your project -->
+                        <annotationProcessorPaths>
+                              <path>
+                                    <groupId>org.projectlombok</groupId>
+                                    <artifactId>lombok</artifactId>
+                                    <version>1.18.20</version>
+                              </path>                              
+                        </annotationProcessorPaths>
+                  </configuration>
+            </plugin>
+            
+            <!-- ... -->  
+            
+      </plugins>
+</build>
+```
+
+
+
 ## [@Data](): giúp giảm boilerplate code khi viết các lớp dữ liệu (data classes) trong Java
 - `@Data` tự động thêm các phương thức `toString()`, `equals()`, `hashCode()`, và các phương thức `getter/setter`
 ```java

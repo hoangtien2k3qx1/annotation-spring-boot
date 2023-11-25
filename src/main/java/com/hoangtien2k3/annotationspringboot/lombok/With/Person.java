@@ -6,9 +6,13 @@ import lombok.With;
 import lombok.experimental.Accessors;
 
 
-/*
-*
-* */
+/**
+ * @author: hoangtien2k3
+ * @create: 25/11/2023 - 11:26
+ * @project: Person.java
+ * @description: @With @Accessors
+ * @update: 25/11/2023
+ */
 @AllArgsConstructor
 @Accessors(fluent = true)
 @Data

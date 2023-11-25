@@ -1,27 +1,34 @@
-package com.hoangtien2k3.annotationspringboot.lombok.Data;
+package com.hoangtien2k3.annotationspringboot.lombok.Value;
 
-import lombok.Data;
+// @Value is the `immutable` variant(bất biến) of `@Data`
+// @Value : tương đương với class `record`
+
+import lombok.Value;
 
 /**
  * @author: hoangtien2k3
- * @create: 25/11/2023 - 11:23
- * @project: Product.java
- * @description: @Data
+ * @create: 25/11/2023 - 11:26
+ * @project: value.java
+ * @description: @Value
  * @update: 25/11/2023
  */
-@Data
-public class Product {
-    public String name;
-    public int price;
+@Value
+public class value {
+    int id;
+    String name;
+    String surname;
 }
 
-//public class Author {
+
+//public final class Author {
 //    private final int id;
-//    private String name;
-//    private String surname;
+//    private final String name;
+//    private final String surname;
 //
-//    public Author(int id) {
-//        this.id = id;
+//    public Author(int id, String name, String surname) {
+//        this.id = id
+//        this.name = name
+//        this.surname = surname
 //    }
 //
 //    public int getId() {
@@ -32,16 +39,8 @@ public class Product {
 //        return name;
 //    }
 //
-//    public void setName(String name) {
-//        this.name = name;
-//    }
-//
 //    public String getSurname() {
 //        return surname;
-//    }
-//
-//    public void setSurname(String surname) {
-//        this.surname = surname;
 //    }
 //
 //    @Override
@@ -66,11 +65,3 @@ public class Product {
 //        return true;
 //    }
 //}
-
-class test {
-    public static void main(String[] args) {
-        Product product = new Product();
-        product.setName("Hoang Anh Tien");
-        product.setPrice(12345);
-    }
-}
