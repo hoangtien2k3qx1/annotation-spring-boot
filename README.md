@@ -80,6 +80,10 @@
 
 ## Spring Boot
 
+#### Hibernate Annotation Full Spring Boot:
+- [Hibernate Annotations](https://www.javaguides.net/2018/12/all-hibernate-mapping-annotations.html)
+
+
 - [@SpringBootConfiguration][springbootconfiguration] - Indicates Spring Boot application `@Configuration`
 - [@EnableAutoConfiguration][enableautoconfiguration] - Enables application context auto-configuration to provide
   possibly needed beans based on the classpath
